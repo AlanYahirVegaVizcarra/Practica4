@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import Practica44.Mexicano;
+
+public class practicastring {
+    public static void main(String[] args) {
+
+        ArrayList<Mexicano> mexicanos = new ArrayList<Mexicano>();
+        mexicanos.add(new Mexicano("Alan", "Vega", "Vizcarra", "2002",
+                "12", "12", "2002", "12", "12", "H", "Baja California", "Mexicana", true));
+
+        mexicanos.add(new Mexicano("Alan", "Vega", "Montoya", "1974",
+                "8", "29", "1974", "08", "29", "H", "Sinaloa", "Mexicana", true));
+
+        mexicanos.add(new Mexicano("Amelia", "Montoya", "Lara", "1954",
+                "05", "16", "1954", "05", "16", "M", "Mexicali", "Extranjera", false));
+
+        System.out.println("\nPersona 1: ");
+        mexicanos.get(0).makeCURP();
+
+        System.out.println("\nPersona 2: ");
+        mexicanos.get(1).makeRFC();
+
+        System.out.println("\nPersona 3: ");
+        mexicanos.get(2).makeCURP();
+        mexicanos.get(2).makeRFC();
+    }
+}
+
